@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.example.druger.obninskroutes.GooglePlayServicesActivity"/>
+      <point      
+        x = "492"      
+        y = "2791"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.example.druger.obninskroutes.MapsActivity"/>
+      <point      
+        x = "546"      
+        y = "2845"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.example.druger.obninskroutes.ListOfStops"/>
+      <point      
+        x = "492"      
+        y = "84"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ru.example.druger.obninskroutes.ListOfStops"/>
+      <point      
+        x = "1468"      
+        y = "84"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.example.druger.obninskroutes.timetable.Timetable"/>
+      <point      
+        x = "484"      
+        y = "988"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ru.example.druger.obninskroutes.timetable.Timetable"/>
+      <point      
+        x = "1460"      
+        y = "980"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ru.example.druger.obninskroutes.MainActivity"/>
+      <point      
+        x = "492"      
+        y = "1896"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ru.example.druger.obninskroutes.MainActivity"/>
+      <point      
+        x = "1472"      
+        y = "1892"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- для экрана со списком остановок, выбранного маршрта -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_selector"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <!--левая миниатюра для остановки-->
+   <ImageView
+       android:id="@+id/iconStop"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:layout_alignParentLeft="true"
+       android:layout_marginRight="5dp"/>
+
+   <!--текст остановки -->
+    <TextView
+        android:id="@+id/titleStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_stop"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iconStop"
+        android:layout_toEndOf="@+id/iconStop" />
+
+</RelativeLayout>

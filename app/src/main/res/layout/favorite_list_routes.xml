@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- для экрана Избранного со списком всех маршрутов -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_selector"
+    android:padding="5dp">
+
+    <!--левая миниатюра номера маршрута -->
+    <LinearLayout
+        android:id="@+id/number_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/ic_favorite_route"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <!--текст начальной и конечной остановки -->
+    <TextView
+        android:id="@+id/favorite_title_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/init_final_route"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/number_route"
+        android:layout_toEndOf="@+id/number_route" />
+
+    <!-- icon favorites -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/btnFavourite_in_favorites" />
+
+
+</RelativeLayout>

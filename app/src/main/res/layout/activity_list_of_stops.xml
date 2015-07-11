@@ -1,0 +1,52 @@
+<!-- экран остановок, выбранного маршрута -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="ru.example.druger.obninskroutes.ListStops">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_route"
+            android:textSize="12sp"
+            android:id="@+id/btnReturnRoute"
+            android:onClick="returnRoute"
+            android:layout_alignBaseline="@+id/btnOnMap"
+            android:layout_alignBottom="@+id/btnOnMap"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/on_map"
+            android:id="@+id/btnOnMap"
+            android:onClick="showOnMap"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listStops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="0.1dp"
+        android:listSelector="@drawable/list_selector"
+        android:layout_below="@+id/relLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+    </ListView>
+
+</RelativeLayout>
