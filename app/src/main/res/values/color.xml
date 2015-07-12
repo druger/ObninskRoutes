@@ -2,4 +2,10 @@
 <resources>
     <item name="drawer_list_item" type="color">#ff000000</item>
     <color name="color_action_bar">#ff4fa6ff</color>
+
+    <color name="color_navigation_drawer">#ff719cff</color>
+    <color name="color_text_drawer_list_item">#fff</color>
+    
+    <color name="color_text_route">#040404</color>
+    <color name="color_text_stop">#040404</color>
 </resources>

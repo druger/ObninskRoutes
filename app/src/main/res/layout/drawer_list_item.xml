@@ -9,4 +9,4 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:textAppearance="?android:attr/textAppearanceMedium"
-    android:textColor="#fff" />
+    android:textColor="@color/color_text_drawer_list_item" />
