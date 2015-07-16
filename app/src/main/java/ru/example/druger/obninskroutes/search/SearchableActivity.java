@@ -3,8 +3,8 @@ package ru.example.druger.obninskroutes.search;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.database.Cursor;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListAdapter;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 import ru.example.druger.obninskroutes.R;
 import ru.example.druger.obninskroutes.db.DBHelper;
 
-public class SearchableActivity extends ActionBarActivity {
+public class SearchableActivity extends AppCompatActivity {
     //static final String LOG_TAG = SearchableActivity.class.getSimpleName();
 
     private DBHelper dbHelper;

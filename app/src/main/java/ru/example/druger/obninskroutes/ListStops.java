@@ -9,7 +9,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -31,7 +31,7 @@ import ru.example.druger.obninskroutes.search.SearchableActivity;
 import ru.example.druger.obninskroutes.timetable.Timetable;
 
 
-public class ListStops extends ActionBarActivity implements SearchView.OnQueryTextListener {
+public class ListStops extends AppCompatActivity implements SearchView.OnQueryTextListener {
     //final String LOG_TAG = ListStops.class.getSimpleName();
 
     public final String TITLE_ROUTE = "title_of_Route";

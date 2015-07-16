@@ -9,7 +9,7 @@ import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.Menu;
@@ -24,7 +24,7 @@ import ru.example.druger.obninskroutes.menu_navigation_drawer.ListRoutes;
 import ru.example.druger.obninskroutes.search.SearchableActivity;
 
 
-public class MainActivity extends ActionBarActivity implements SearchView.OnQueryTextListener {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
     final String LOG_TAG = MainActivity.class.getSimpleName();
 
     private String[] navigationTitles;

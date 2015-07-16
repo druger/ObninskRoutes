@@ -3,13 +3,13 @@ package ru.example.druger.obninskroutes.timetable;
 import android.app.SearchManager;
 import android.content.ComponentName;
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.Menu;
@@ -21,7 +21,7 @@ import ru.example.druger.obninskroutes.search.SearchableActivity;
 /**
  * экран рсписания остановки
  */
-public class Timetable extends ActionBarActivity implements SearchView.OnQueryTextListener {
+public class Timetable extends AppCompatActivity implements SearchView.OnQueryTextListener {
     public final String NAME_STOP = "name_of_stop";
 
     String[] days = {"Рабочие дни", "Выходные"};
