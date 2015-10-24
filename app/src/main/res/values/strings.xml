@@ -3,14 +3,12 @@
 
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
-    
-    <string-array name="navigation_titles">
-        <item>Маршруты</item>
-        <item>Избранное</item>
-    </string-array>
 
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="drawer_item_timetable">Расписания</string>
+    <string name="drawer_item_favorites">Избранное</string>
 
     <string name="init_final_route">Начальный пункт - Конечный пункт</string>
     <string name="title_activity_list_of_stops">Остановки</string>

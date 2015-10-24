@@ -9,12 +9,12 @@ android {
             storePassword 'asfgjk32rus'
         }
     }
-    compileSdkVersion 22
+    compileSdkVersion 23
     buildToolsVersion '22.0.1'
     defaultConfig {
         applicationId "ru.example.druger.obninskroutes"
-        minSdkVersion 11
-        targetSdkVersion 21
+        minSdkVersion 14
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -32,9 +32,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:22.2.0'
-    compile 'com.android.support:support-v4:22.2.0'
-    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:support-v13:23.1.0'
+    compile 'com.google.android.gms:play-services:8.1.0'
     compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
     compile files('libs/gson-2.3.1.jar')
     compile files('libs/gson-2.3.1-sources.jar')

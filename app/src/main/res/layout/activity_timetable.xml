@@ -6,7 +6,7 @@
     tools:context="ru.example.druger.obninskroutes.timetable.Timetable">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+        android:id="@+id/pager_timetable"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

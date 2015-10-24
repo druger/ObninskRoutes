@@ -1,1 +1,5 @@
 /build
+
+app.iml
+app-release.apk
+src/debug/res/values/google_maps_api.xml

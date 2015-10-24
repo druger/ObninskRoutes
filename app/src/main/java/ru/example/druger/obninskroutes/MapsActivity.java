@@ -110,7 +110,7 @@ public class MapsActivity extends FragmentActivity {
         for (int i = 0; i < titleStops.size(); i++) {
             mMap.addMarker(new MarkerOptions().position(latLngStops.get(i))
                     .title(titleStops.get(i))
-                    .icon(BitmapDescriptorFactory.fromResource(R.mipmap.bus)));
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.bus)));
         }
     }
 

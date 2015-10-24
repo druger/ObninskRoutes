@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="drawer_list_item" type="color">#ff000000</item>
-    <color name="color_action_bar">#ff4fa6ff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#303F9F</color>
 
-    <color name="color_navigation_drawer">#ff719cff</color>
-    <color name="color_text_drawer_list_item">#fff</color>
-    
-    <color name="color_text_route">#040404</color>
-    <color name="color_text_stop">#040404</color>
+    <color name="white">#FFFFFF</color>
 </resources>

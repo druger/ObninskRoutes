@@ -18,37 +18,37 @@ public class Route {
     }
 
     public static Integer[] iconBusRoutes = {
-            R.mipmap.route1,
-            R.mipmap.route2,
-            R.mipmap.route3,
-            R.mipmap.route4,
-            R.mipmap.route5,
-            R.mipmap.route6,
-            R.mipmap.route7,
-            R.mipmap.route8,
-            R.mipmap.route9,
-            R.mipmap.route11,
-            R.mipmap.route18
+            R.drawable.route1,
+            R.drawable.route2,
+            R.drawable.route3,
+            R.drawable.route4,
+            R.drawable.route5,
+            R.drawable.route6,
+            R.drawable.route7,
+            R.drawable.route8,
+            R.drawable.route9,
+            R.drawable.route11,
+            R.drawable.route18
     };
 
     public static Integer[] iconTaxiRoutes = {
-            R.mipmap.m_route1,
-            R.mipmap.m_route2,
-            R.mipmap.m_route3,
-            R.mipmap.m_route4,
-            R.mipmap.m_route5,
-            R.mipmap.m_route6,
-            R.mipmap.m_route7,
-            R.mipmap.m_route8,
-            R.mipmap.m_route9,
-            R.mipmap.m_route10,
-            R.mipmap.m_route11,
-            R.mipmap.m_route12,
-            R.mipmap.m_route13,
-            R.mipmap.m_route14,
-            R.mipmap.m_route15,
-            R.mipmap.m_route22,
-            R.mipmap.m_route23
+            R.drawable.m_route1,
+            R.drawable.m_route2,
+            R.drawable.m_route3,
+            R.drawable.m_route4,
+            R.drawable.m_route5,
+            R.drawable.m_route6,
+            R.drawable.m_route7,
+            R.drawable.m_route8,
+            R.drawable.m_route9,
+            R.drawable.m_route10,
+            R.drawable.m_route11,
+            R.drawable.m_route12,
+            R.drawable.m_route13,
+            R.drawable.m_route14,
+            R.drawable.m_route15,
+            R.drawable.m_route22,
+            R.drawable.m_route23
 
     };
 

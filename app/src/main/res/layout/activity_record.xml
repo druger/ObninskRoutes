@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/choosen_stop_from_suggestion"
-        android:textColor="@color/color_text_route"
+        android:textColor="@color/primary_text_default_material_light"
         android:typeface="sans"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/ic_searchable_route"

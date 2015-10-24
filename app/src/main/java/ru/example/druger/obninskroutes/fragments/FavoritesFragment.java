@@ -1,11 +1,10 @@
-package ru.example.druger.obninskroutes.menu_navigation_drawer;
+package ru.example.druger.obninskroutes.fragments;
 
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,19 +19,14 @@ import ru.example.druger.obninskroutes.R;
 import ru.example.druger.obninskroutes.Route;
 import ru.example.druger.obninskroutes.SharedPreference;
 
-/**
- * Экран Избранное
- */
-public class Favorites extends Fragment {
+public class FavoritesFragment extends Fragment {
     private ListView favoriteListRoutes;
     private ArrayList<Route> favoriteRoutes;
     SharedPreference sharedPreference;
 
     static FavoriteListRoutesAdapter routesAdapter;
 
-    final String LOG_TAG = Favorites.class.getSimpleName();
-
-    public Favorites() {
+    public FavoritesFragment() {
         // Required empty public constructor
     }
 
@@ -52,7 +46,7 @@ public class Favorites extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.favorites, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_favorites, container, false);
         favoriteListRoutes = (ListView) rootView.findViewById(R.id.favorite_list_routes);
         return rootView;
     }
@@ -60,7 +54,6 @@ public class Favorites extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        Log.e(LOG_TAG, "onResume Called");
         if (favoriteRoutes != null){
             try {
                 routesAdapter = new FavoriteListRoutesAdapter(getActivity(),

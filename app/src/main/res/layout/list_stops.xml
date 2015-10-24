@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/name_stop"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/color_text_stop"
+        android:textColor="@color/primary_text_default_material_light"
         android:typeface="sans"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/iconStop"

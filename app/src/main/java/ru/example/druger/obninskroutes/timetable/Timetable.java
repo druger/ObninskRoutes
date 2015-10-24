@@ -37,7 +37,7 @@ public class Timetable extends AppCompatActivity implements SearchView.OnQueryTe
         setTitle(getIntent().getStringExtra(NAME_STOP));
         setContentView(R.layout.activity_timetable);
 
-        pager = (ViewPager) findViewById(R.id.pager);
+        pager = (ViewPager) findViewById(R.id.pager_timetable);
         pagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
         pager.setAdapter(pagerAdapter);
 

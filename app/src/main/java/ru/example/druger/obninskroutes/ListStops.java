@@ -45,9 +45,9 @@ public class ListStops extends AppCompatActivity implements SearchView.OnQueryTe
     ArrayList<String> titleStops = new ArrayList<>();
 
     Integer[] iconStops = {
-            R.mipmap.ic_stop_first,
-            R.mipmap.ic_stop_middle,
-            R.mipmap.ic_stop_last
+            R.drawable.ic_stop_first,
+            R.drawable.ic_stop_middle,
+            R.drawable.ic_stop_last
     };
     ListView listStops;
 
@@ -171,7 +171,7 @@ public class ListStops extends AppCompatActivity implements SearchView.OnQueryTe
         SharedPreference sharedPreference;
 
         public ListStopsAdapter(Activity context, ArrayList<String> itemName, Integer[] imgId){
-            super(context, R.layout.list_of_routes, itemName);
+            super(context, R.layout.list_routes, itemName);
 
             this.context = context;
             this.itemName = itemName;
@@ -200,7 +200,7 @@ public class ListStops extends AppCompatActivity implements SearchView.OnQueryTe
 
             if (convertView == null) {
                 holder = new ViewHolder();
-                result = inflater.inflate(R.layout.list_of_stops, parent, false);
+                result = inflater.inflate(R.layout.list_stops, parent, false);
                 holder.iconStop = (ImageView) result.findViewById(R.id.iconStop);
                 holder.titleStop = (TextView) result.findViewById(R.id.titleStop);
                 result.setTag(holder);

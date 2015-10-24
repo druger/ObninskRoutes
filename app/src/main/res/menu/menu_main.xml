@@ -1,10 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sabd="http://schemas.android.com/apk/res-auto" >
+    xmlns:sabd="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
 
     <item
         android:id="@+id/action_search"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@drawable/ic_search_white_24dp"
         android:title="@string/action_search"
         sabd:showAsAction="ifRoom|collapseActionView"
-        sabd:actionViewClass="android.support.v7.widget.SearchView"/>
+        sabd:actionViewClass="android.support.v7.widget.SearchView"
+        app:theme="@style/Theme.AppCompat.NoActionBar" />
 </menu>
