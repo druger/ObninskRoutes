@@ -2,17 +2,18 @@ package ru.example.druger.obninskroutes.fragments;
 
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import ru.example.druger.obninskroutes.ClickListener;
 import ru.example.druger.obninskroutes.ListStops;
 import ru.example.druger.obninskroutes.R;
 import ru.example.druger.obninskroutes.Route;
@@ -32,6 +33,7 @@ public class TaxiRoutesFragment extends Fragment {
     Activity activity;
     private ArrayList<Route> routesTaxi = new ArrayList<>();
 
+    private ListRoutesAdapter routesAdapter;
 
     public TaxiRoutesFragment() {
         // Required empty public constructor
@@ -43,6 +45,7 @@ public class TaxiRoutesFragment extends Fragment {
         activity = getActivity();
         sharedPreference = new SharedPreference();
         setRoutes();
+        routesAdapter = new ListRoutesAdapter(activity, routesTaxi, Route.iconTaxiRoutes);
     }
 
     @Override
@@ -50,23 +53,22 @@ public class TaxiRoutesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_taxi_routes, container, false);
-        ListView listTaxiRoutes = (ListView) rootView.findViewById(R.id.listTaxiRoutes);
-
-        ListRoutesAdapter routesAdapter = new ListRoutesAdapter(activity, routesTaxi, Route.iconTaxiRoutes);
+        final RecyclerView listTaxiRoutes = (RecyclerView) rootView.findViewById(R.id.rvTaxiRoutes);
+        listTaxiRoutes.setLayoutManager(new LinearLayoutManager(activity));
+        listTaxiRoutes.setHasFixedSize(true);
         listTaxiRoutes.setAdapter(routesAdapter);
 
-        listTaxiRoutes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        routesAdapter.setOnItemClickListener(new ClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(int position, View view) {
                 Intent intent = new Intent(getActivity().getApplicationContext(), ListStops.class);
 
-                Route route = (Route) parent.getItemAtPosition(position);
+                Route route = routesTaxi.get(position);
                 intent.putExtra(TITLE_ROUTE, route.getTitle());
                 intent.putExtra(ID_ROUTE, position);
                 startActivity(intent);
             }
         });
-
         return rootView;
     }
 
@@ -89,6 +91,4 @@ public class TaxiRoutesFragment extends Fragment {
         routesTaxi.add(new Route(16, "Кончаловские горы - Кончаловские горы"));
         routesTaxi.add(new Route(17, "Кончаловские горы - Кончаловские горы"));
     }
-
-
 }

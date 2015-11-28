@@ -171,7 +171,7 @@ public class ListStops extends AppCompatActivity implements SearchView.OnQueryTe
         SharedPreference sharedPreference;
 
         public ListStopsAdapter(Activity context, ArrayList<String> itemName, Integer[] imgId){
-            super(context, R.layout.list_routes, itemName);
+            super(context, R.layout.item_list_routes, itemName);
 
             this.context = context;
             this.itemName = itemName;

@@ -15,7 +15,7 @@
         android:layout_marginRight="5dp">
 
         <ImageView
-            android:id="@+id/ic_favorite_route"
+            android:id="@+id/ic_route"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:padding="5dp" />
@@ -23,7 +23,7 @@
 
     <!--text initial and final stop -->
     <TextView
-        android:id="@+id/favorite_title_route"
+        android:id="@+id/title_route"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/init_final_route"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:id="@+id/btnFavourite_in_favorites" />
+        android:id="@+id/btnFavourite" />
 
 
 </RelativeLayout>
